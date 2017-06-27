@@ -37,34 +37,42 @@
 
     </head>
 
-    <body onload= "loadStuff()">
+    <body class = "grey lighten-2">
 
       <!--Navigation Bar-->
       <nav>
-        <div class="nav-wrapper light-blue darken-4">
+        <div class="nav-wrapper  grey lighten-4 ">
           <div class = "container">
-            <a href="#!" class="brand-logo">United Framing Carpenters</a>
 
+<!-- <img src = "img/projects_demo/LogoUFC_Icon.png" class = "responsive-img" style ="margin-top: 5%; height:50px; width:50px; display:inline"> -->
+            <div class="hide-on-small-only"><a href="#!" class="brand-logo " style="color:#757575 ">United Framing Carpenters</a></div>
+            <!-- <div class="hide-on-med-and-up"><img src = "img/projects_demo/LogoUFC_Text.png" class = "responsive-img" style ="margin-top: 2%"></div> -->
+              <div class="hide-on-med-and-up"><a href="#!" class="brand-logo" style="color:#757575; font-size:200%">United Framing Carpenters</a></div>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <ul class="right hide-on-med-and-down">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="index.html" style="color:#757575 ">Home</a></li>
+              <li><a href="about.html" style="color:#757575 ">About</a></li>
+              <li><a href="projects.html" style="color:#757575 ">Projects</a></li>
             </ul>
 
             <ul class="side-nav" id="mobile-demo">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
             </ul>
 
           </div>
         </div>
       </nav>
 
+<br>
 
-      <div class = "container">
+      <div  class = "container white z-depth-2" style="padding:2%">
+        <blockquote>
+          <h4>Featured Image Gallery:</h4>
+          <p>Note: You might need to refresh the page to view it. Issue has been brought up and currently being fixed.</p>
+        </blockquote>
         <div class="carousel carousel-slider ">
           <a class="carousel-item" href="#one!"><img src="img/projects_demo/optimized/5.jpg" /></a>
           <a class="carousel-item" href="#two!"><img src="img/projects_demo/optimized/6.jpg" /></a>
@@ -83,7 +91,7 @@
 <!-- <img src="img/projects_demo/23.jpg"> -->
 
         <blockquote>
-          <h3 >Full Gallery:</h3>
+          <h4 >Full Gallery:</h4>
         </blockquote>
 
         <a href="#!" class="btn" onclick="testFunction()">Click Me</a>
@@ -568,25 +576,23 @@
 
 
       </div>
-
-      <footer class="page-footer light-blue darken-4">
+<br>
+      <footer class="page-footer grey lighten-4">
         <div class="container">
           <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Contact Information</h5>
-              <p class="grey-text text-lighten-4">You can contract me by email: ahunnii@emich.edu</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
+
+              <h5 style="color:#757575 ">Follow us on Social Media:</h5>
               <ul>
-                <li><a class="grey-text text-lighten-3" href="http://github.com/ahunnii">GitHub</a></li>
-                <li><a class="grey-text text-lighten-3" href="http://linkedin.com/in/ahunnii">LinkedIn</a></li>
+                <li><a style="color:#757575 "href="#facebook">Facebook</a></li>
+                <li><a style="color:#757575 "href="#twitter">Twitter</a></li>
+                <li><a style="color:#757575 "href="https://www.instagram.com/unitedframingcarpenters/">Instagram</a></li>
               </ul>
-            </div>
+              <h6 class="light">Website Last Updated: Tue Jun 27 2017 07:10:27 GMT-0400 (Eastern Standard Time)</h6>
           </div>
+
         </div>
         <div class="footer-copyright">
-          <div class="container">
+          <div class="container" style="color:#757575 ">
           @ Andrew Hunn | 2017 | <a href = "http://andrewhunnii.com">andrewhunnii.com</a>
           </div>
         </div>
@@ -619,16 +625,12 @@
           Materialize.fadeInImage('.responsive-img');
         }
 
-        function loadStuff(){
-          $(document).ready(function(){
-            $('.carousel').carousel();
-          });
-          $('.slider').slider('pause');
+
+
+
            $('.carousel.carousel-slider').carousel({fullWidth: true});
 
-           $(document).ready(function(){
-             $('.slider').slider();
-           });
+
 
             $(document).ready(function(){
               $('.scrollspy').scrollSpy();
@@ -655,7 +657,7 @@
             $(document).ready(function(){
               $('ul.tabs').tabs();
             });
-        }
+
       </script>
     </body>
   </html>
