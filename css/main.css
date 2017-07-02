@@ -1,3 +1,6 @@
 blockquote {
   border-left: 5px solid #3a6073;
 }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
