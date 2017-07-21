@@ -1,5 +1,6 @@
 blockquote {
-  border-left: 5px solid #3a6073;
+  /*border-left: 5px solid #3a6073;*/
+  border-left: 5px solid #f57c00;
 }
 
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
@@ -13,4 +14,55 @@ blockquote {
   top: 0;
   margin-bottom: 0px;
   z-index: 997;
+}
+
+.linestiff {
+  margin: 20px 0;
+  padding-right: : 1.5rem;
+  border-right: 2px solid #f57c00 ;
+}
+
+.divider{
+  background-color: #f57c00;
+}
+
+h3.line_design {
+ overflow: hidden;
+ text-align: center;
+}
+h3.line_design:before,
+h3.line_design:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h3.line_design:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h3.line_design:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+.nav-wrapper{
+ background-color: : #eeeeee;
+  transition: background-color 1s ease 0s;
+}
+
+.nav-wrapper-solid{
+  background-color:#424242;
+  /*transition: background-color 1s ease 0s;*/
+}
+
+.nav-a-regular{
+  transition: color 1s ease 0s;
+  color:#757575;
+}
+.nav-a-solid{
+  transition: color 1s ease 0s;
+  color:#ffffff ;
 }
